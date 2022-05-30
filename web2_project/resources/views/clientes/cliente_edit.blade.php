@@ -1,12 +1,10 @@
 @extends('layouts.main')
 
 @section('title', 'Editando Cliente')
-
 @section('content')
-
-<div id="event-create-container" class="col-md-6 offset-md-3">
+<div id="cliente-edit-container" class="col-md-6 offset-md-3">
     <h1>Editando: {{$cliente->nome}}</h1>
-    <form action="/services/update/{{$cliente->id}}" method="POST">
+    <form action="/cliente_update/{{$cliente->id}}" method="POST">
         @csrf
         @method('PUT')
         <div class="form-group">
@@ -41,5 +39,4 @@
         <input type="submit" class="btn btm-primary" value="Editar">
     </form>
 </div>
-
 @endsection

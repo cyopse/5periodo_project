@@ -1,10 +1,7 @@
-* {
+/* {
     font-family: 'Roboto';
 }
-
-#navbar img {
-    width: 80px;
-}
+*/
 
 .msg {
     background-color: #D4EDDA;
@@ -14,4 +11,49 @@
     margin-bottom: 0;
     text-align: center;
     padding: 10px;
+}
+
+/* layout 
+------------------------*/
+html, body, #crud_cliente, #form_cliente, #crud_prestador {
+    height: 100%;
+}
+
+body {
+    background: url(../img/background_img.png) no-repeat,
+    linear-gradient(50deg,#41f2ff,#a8f826);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar
+------------------------*/
+nav.navbar-transparente {
+    padding: 2px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255,.5);
+    border-color: rgba(255, 255, 255,0.5);
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 10px 15px;
+}
+
+/* capa
+--------------------*/
+.capa {
+    text-align: center;
 }
